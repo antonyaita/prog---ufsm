@@ -14,5 +14,6 @@ int main(){
 
     area = (base*altura)/2;
     printf("O valor da area desse triangulo e: %f", area);
+    
     return 0;
 }

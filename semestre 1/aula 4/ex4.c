@@ -11,7 +11,7 @@ decimais.*/
 
 int main(){
     int horas;
-    float horaTrabalho, salarioBruto;
+    float horaTrabalho, salarioBruto, salarioLiquido, imposto, inss, sindical;
 
     printf("Digite o valor da hora trabalhada: ");
     scanf("%f", &horaTrabalho);
@@ -20,6 +20,14 @@ int main(){
     scanf("%d", &horas);
 
     salarioBruto = (float) horas*horaTrabalho;
-    printf("Seu salario bruto sera de: %f", salarioBruto);
+    printf("Seu salario bruto sera de: %.2f", salarioBruto);
+
+    imposto = salarioBruto*0.11;
+    inss = salarioBruto*0.08;
+    sindical = salarioBruto*0.05;
+    salarioLiquido = salarioBruto-imposto-inss-sindical;
+
+    printf("Seu salario descontado sera de: %.2f", salarioLiquido);
+    
     return 0;
 }

@@ -16,8 +16,8 @@ int main(){
     temp = y;
     y = x;
     x = temp;
-    
 
     printf("o valor de x e: %d\n e o valor de y e: %d", x, y);
+
     return 0;
 }

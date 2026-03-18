@@ -15,6 +15,8 @@ int main(){
     x = x+y;
     y = x-y;
     x = x-y;
+    
     printf("o valor de x e: %d\n e o valor de y e: %d", x, y);
+
     return 0;
 }

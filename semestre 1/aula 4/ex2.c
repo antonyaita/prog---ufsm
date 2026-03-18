@@ -21,5 +21,6 @@ int main(){
     printf("A divisao de a por b e: %d", c);
     d = (float) a/b;
     printf("\nA divisao de a por b e: %.3f", d);
+    
     return 0;
 }
